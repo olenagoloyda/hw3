@@ -39,12 +39,14 @@ function App() {
       <div className='cards_wrapper'>
       {courseData ? courseData.lessons.map((lesson, index) => 
         <Card
-          index={index+1}
+          index={index + 1}
+          key={index}
           theme={lesson.title}
           type={lesson.type}
           keyPoints={lesson.keyPoints}
           links={lesson.links}
           youtubeLink={lesson.youtube}
+          homeTask={lesson.hometask}
           />
          
         
