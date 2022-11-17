@@ -35,7 +35,7 @@ export default function Card({ index,theme, type, keyPoints, links, youtubeLink,
      }
      
      return (
-          <div className='lesson_card' key={index}>
+          <div className={checked ? 'lesson_card completed_card':'lesson_card'} key={index}>
                <h3>Lesson {index}</h3>
                <ul className='card_content'>
                     <li key={theme+index}><span>Theme:  </span>{theme}</li>

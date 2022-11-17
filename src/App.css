@@ -123,3 +123,6 @@ height:35px;
   cursor: pointer;
  }
 
+.completed_card{
+  opacity: 0.2;
+}
