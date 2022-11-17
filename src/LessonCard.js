@@ -46,7 +46,7 @@ export default function Card({ index,theme, type, keyPoints, links, youtubeLink,
                          </ul>
                     </li>
                     <li>
-                         <span>Useful links: {showUsefulLinks ? <button className="show_more_btn links_arrow"
+                         <span>Useful links: {links ? <button className="show_more_btn links_arrow"
                               onClick={() => showBlock(showUsefulLinks, setShowUsefulLinks)}> + </button> : ''}</span>
                          <ul className='additionalUl'>
                               {links && showUsefulLinks ? links.map((link, index) => <li key={index}>{<a href={link[1]}>{link[0]}</a>}</li>) : ''}
